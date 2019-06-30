@@ -1,0 +1,1 @@
+this is the index page of spouses<?php /**PATH /var/www/html/walfare/resources/views/spouses/index.blade.php ENDPATH**/ ?>

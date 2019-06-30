@@ -1,0 +1,595 @@
+[2019-06-02 05:40:28] local.ERROR: Call to a member function name() on string {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to a member function name() on string at /var/www/html/walfare/routes/web.php:28)
+[stacktrace]
+#0 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php(35): require()
+#1 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Router.php(415): Illuminate\\Routing\\RouteFileRegistrar->register('/var/www/html/w...')
+#2 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Router.php(373): Illuminate\\Routing\\Router->loadRoutes('/var/www/html/w...')
+#3 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(121): Illuminate\\Routing\\Router->group(Array, '/var/www/html/w...')
+#4 /var/www/html/walfare/app/Providers/RouteServiceProvider.php(56): Illuminate\\Routing\\RouteRegistrar->group('/var/www/html/w...')
+#5 /var/www/html/walfare/app/Providers/RouteServiceProvider.php(40): App\\Providers\\RouteServiceProvider->mapWebRoutes()
+#6 [internal function]: App\\Providers\\RouteServiceProvider->map()
+#7 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#8 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#9 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#10 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#11 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(87): Illuminate\\Container\\Container->call(Array)
+#12 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#13 /var/www/html/walfare/app/Providers/RouteServiceProvider.php(28): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->boot()
+#14 [internal function]: App\\Providers\\RouteServiceProvider->boot()
+#15 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#16 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#17 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#18 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#19 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(817): Illuminate\\Container\\Container->call(Array)
+#20 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(800): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#21 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 20)
+#22 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(801): array_walk(Array, Object(Closure))
+#23 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#24 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#25 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(322): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#26 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#27 /var/www/html/walfare/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 {main}
+"} 
+[2019-06-02 05:46:31] local.ERROR: Command "make:migrattion" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:migrattion\" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test at /var/www/html/walfare/vendor/symfony/console/Application.php:639)
+[stacktrace]
+#0 /var/www/html/walfare/vendor/symfony/console/Application.php(233): Symfony\\Component\\Console\\Application->find('make:migrattion')
+#1 /var/www/html/walfare/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /var/www/html/walfare/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2019-06-02 06:32:36] local.ERROR: SQLSTATE[HY000]: General error: 1215 Cannot add foreign key constraint (SQL: alter table `spouses` add constraint `spouses_member_id_foreign` foreign key (`member_id`) references `members` (`id`) on delete cascade on update cascade) {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1215 Cannot add foreign key constraint (SQL: alter table `spouses` add constraint `spouses_member_id_foreign` foreign key (`member_id`) references `members` (`id`) on delete cascade on update cascade) at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, PDOException(code: HY000): SQLSTATE[HY000]: General error: 1215 Cannot add foreign key constraint at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php:458)
+[stacktrace]
+#0 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('alter table `sp...', Array, Object(Closure))
+#1 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php(459): Illuminate\\Database\\Connection->run('alter table `sp...', Array, Object(Closure))
+#2 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(97): Illuminate\\Database\\Connection->statement('alter table `sp...')
+#3 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(278): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(167): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(237): Illuminate\\Database\\Schema\\Builder->create('spouses', Object(Closure))
+#6 /var/www/html/walfare/database/migrations/2019_06_02_055201_create_spouses_table.php(22): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(385): CreateSpousesTable->up()
+#8 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(394): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(197): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateSpousesTable), 'up')
+#10 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(164): Illuminate\\Database\\Migrations\\Migrator->runUp('/var/www/html/w...', 1, false)
+#11 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(111): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#12 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(71): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#14 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#15 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#19 /var/www/html/walfare/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#21 /var/www/html/walfare/vendor/symfony/console/Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 /var/www/html/walfare/vendor/symfony/console/Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 /var/www/html/walfare/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 /var/www/html/walfare/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 {main}
+"} 
+[2019-06-02 06:46:25] local.ERROR: SQLSTATE[HY000]: General error: 1215 Cannot add foreign key constraint (SQL: alter table `spouses` add constraint `spouses_member_id_foreign` foreign key (`member_id`) references `members` (`id`) on delete cascade on update cascade) {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1215 Cannot add foreign key constraint (SQL: alter table `spouses` add constraint `spouses_member_id_foreign` foreign key (`member_id`) references `members` (`id`) on delete cascade on update cascade) at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, PDOException(code: HY000): SQLSTATE[HY000]: General error: 1215 Cannot add foreign key constraint at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php:458)
+[stacktrace]
+#0 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('alter table `sp...', Array, Object(Closure))
+#1 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php(459): Illuminate\\Database\\Connection->run('alter table `sp...', Array, Object(Closure))
+#2 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(97): Illuminate\\Database\\Connection->statement('alter table `sp...')
+#3 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(278): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(167): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(237): Illuminate\\Database\\Schema\\Builder->create('spouses', Object(Closure))
+#6 /var/www/html/walfare/database/migrations/2019_06_02_055201_create_spouses_table.php(23): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(385): CreateSpousesTable->up()
+#8 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(394): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(197): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateSpousesTable), 'up')
+#10 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(164): Illuminate\\Database\\Migrations\\Migrator->runUp('/var/www/html/w...', 1, false)
+#11 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(111): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#12 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(71): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#14 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#15 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#19 /var/www/html/walfare/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#21 /var/www/html/walfare/vendor/symfony/console/Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 /var/www/html/walfare/vendor/symfony/console/Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 /var/www/html/walfare/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 /var/www/html/walfare/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 {main}
+"} 
+[2019-06-02 07:11:43] local.ERROR: SQLSTATE[HY000] [1049] Unknown database 'walfare' (SQL: select * from information_schema.tables where table_schema = walfare and table_name = migrations and table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'walfare' (SQL: select * from information_schema.tables where table_schema = walfare and table_name = migrations and table_type = 'BASE TABLE') at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, PDOException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'walfare' at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70)
+[stacktrace]
+#0 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php(333): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(18): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(583): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#7 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#8 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#9 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#11 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#12 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#13 /var/www/html/walfare/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#14 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 /var/www/html/walfare/vendor/symfony/console/Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 /var/www/html/walfare/vendor/symfony/console/Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 /var/www/html/walfare/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 /var/www/html/walfare/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 {main}
+"} 
+[2019-06-02 07:12:14] local.ERROR: Method Illuminate\Database\Schema\Blueprint::foreignkey does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Illuminate\\Database\\Schema\\Blueprint::foreignkey does not exist. at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:102)
+[stacktrace]
+#0 /var/www/html/walfare/database/migrations/2019_05_22_182928_create_childrens_table.php(25): Illuminate\\Database\\Schema\\Blueprint->__call('foreignkey', Array)
+#1 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(166): CreateChildrensTable->{closure}(Object(Illuminate\\Database\\Schema\\Blueprint))
+#2 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Support/helpers.php(1123): Illuminate\\Database\\Schema\\Builder->Illuminate\\Database\\Schema\\{closure}(Object(Illuminate\\Database\\Schema\\Blueprint))
+#3 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(167): tap(Object(Illuminate\\Database\\Schema\\Blueprint), Object(Closure))
+#4 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(237): Illuminate\\Database\\Schema\\Builder->create('childrens', Object(Closure))
+#5 /var/www/html/walfare/database/migrations/2019_05_22_182928_create_childrens_table.php(27): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#6 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(385): CreateChildrensTable->up()
+#7 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(394): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#8 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(197): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateChildrensTable), 'up')
+#9 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(164): Illuminate\\Database\\Migrations\\Migrator->runUp('/var/www/html/w...', 1, false)
+#10 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(111): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#11 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(71): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#12 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#13 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#14 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#15 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#16 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#17 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#18 /var/www/html/walfare/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#19 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 /var/www/html/walfare/vendor/symfony/console/Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 /var/www/html/walfare/vendor/symfony/console/Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 /var/www/html/walfare/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 /var/www/html/walfare/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+"} 
+[2019-06-02 07:13:43] local.ERROR: SQLSTATE[HY000] [1049] Unknown database 'walfare' (SQL: select * from information_schema.tables where table_schema = walfare and table_name = migrations and table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'walfare' (SQL: select * from information_schema.tables where table_schema = walfare and table_name = migrations and table_type = 'BASE TABLE') at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, PDOException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'walfare' at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70)
+[stacktrace]
+#0 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php(333): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(18): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(583): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#7 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#8 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#9 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#11 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#12 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#13 /var/www/html/walfare/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#14 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 /var/www/html/walfare/vendor/symfony/console/Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 /var/www/html/walfare/vendor/symfony/console/Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 /var/www/html/walfare/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 /var/www/html/walfare/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 {main}
+"} 
+[2019-06-02 07:14:13] local.ERROR: Method Illuminate\Database\Schema\Blueprint::foreignkey does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Illuminate\\Database\\Schema\\Blueprint::foreignkey does not exist. at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:102)
+[stacktrace]
+#0 /var/www/html/walfare/database/migrations/2019_05_22_182928_create_childrens_table.php(25): Illuminate\\Database\\Schema\\Blueprint->__call('foreignkey', Array)
+#1 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(166): CreateChildrensTable->{closure}(Object(Illuminate\\Database\\Schema\\Blueprint))
+#2 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Support/helpers.php(1123): Illuminate\\Database\\Schema\\Builder->Illuminate\\Database\\Schema\\{closure}(Object(Illuminate\\Database\\Schema\\Blueprint))
+#3 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(167): tap(Object(Illuminate\\Database\\Schema\\Blueprint), Object(Closure))
+#4 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(237): Illuminate\\Database\\Schema\\Builder->create('childrens', Object(Closure))
+#5 /var/www/html/walfare/database/migrations/2019_05_22_182928_create_childrens_table.php(27): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#6 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(385): CreateChildrensTable->up()
+#7 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(394): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#8 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(197): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateChildrensTable), 'up')
+#9 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(164): Illuminate\\Database\\Migrations\\Migrator->runUp('/var/www/html/w...', 1, false)
+#10 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(111): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#11 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(71): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#12 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#13 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#14 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#15 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#16 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#17 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#18 /var/www/html/walfare/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#19 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 /var/www/html/walfare/vendor/symfony/console/Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 /var/www/html/walfare/vendor/symfony/console/Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 /var/www/html/walfare/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 /var/www/html/walfare/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+"} 
+[2019-06-02 07:17:13] local.ERROR: Command "make" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make\" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test at /var/www/html/walfare/vendor/symfony/console/Application.php:639)
+[stacktrace]
+#0 /var/www/html/walfare/vendor/symfony/console/Application.php(233): Symfony\\Component\\Console\\Application->find('make')
+#1 /var/www/html/walfare/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /var/www/html/walfare/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2019-06-02 07:17:32] local.ERROR: Method Illuminate\Database\Schema\Blueprint::foreignkey does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Illuminate\\Database\\Schema\\Blueprint::foreignkey does not exist. at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Support/Traits/Macroable.php:102)
+[stacktrace]
+#0 /var/www/html/walfare/database/migrations/2019_06_02_071558_create_childrens_table.php(25): Illuminate\\Database\\Schema\\Blueprint->__call('foreignkey', Array)
+#1 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(166): CreateChildrensTable->{closure}(Object(Illuminate\\Database\\Schema\\Blueprint))
+#2 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Support/helpers.php(1123): Illuminate\\Database\\Schema\\Builder->Illuminate\\Database\\Schema\\{closure}(Object(Illuminate\\Database\\Schema\\Blueprint))
+#3 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(167): tap(Object(Illuminate\\Database\\Schema\\Blueprint), Object(Closure))
+#4 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(237): Illuminate\\Database\\Schema\\Builder->create('childrens', Object(Closure))
+#5 /var/www/html/walfare/database/migrations/2019_06_02_071558_create_childrens_table.php(27): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#6 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(385): CreateChildrensTable->up()
+#7 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(394): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#8 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(197): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateChildrensTable), 'up')
+#9 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(164): Illuminate\\Database\\Migrations\\Migrator->runUp('/var/www/html/w...', 1, false)
+#10 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(111): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#11 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(71): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#12 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#13 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#14 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#15 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#16 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#17 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#18 /var/www/html/walfare/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#19 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 /var/www/html/walfare/vendor/symfony/console/Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 /var/www/html/walfare/vendor/symfony/console/Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 /var/www/html/walfare/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 /var/www/html/walfare/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+"} 
+[2019-06-02 07:29:01] local.ERROR: syntax error, unexpected '*', expecting function (T_FUNCTION) or const (T_CONST) {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): syntax error, unexpected '*', expecting function (T_FUNCTION) or const (T_CONST) at /var/www/html/walfare/database/migrations/2019_06_02_072212_create_balances_table.php:15)
+[stacktrace]
+#0 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(475): Illuminate\\Filesystem\\Filesystem->requireOnce('/var/www/html/w...')
+#1 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(105): Illuminate\\Database\\Migrations\\Migrator->requireFiles(Array)
+#2 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(71): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#3 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#4 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#5 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#7 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#8 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#9 /var/www/html/walfare/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#11 /var/www/html/walfare/vendor/symfony/console/Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 /var/www/html/walfare/vendor/symfony/console/Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 /var/www/html/walfare/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 /var/www/html/walfare/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 {main}
+"} 
+[2019-06-02 07:35:49] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') on delete cascade on update cascade' at line 1 (SQL: alter table `balances` add constraint `balances_member_id_foreign` foreign key (`member_id`) references `members` () on delete cascade on update cascade) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') on delete cascade on update cascade' at line 1 (SQL: alter table `balances` add constraint `balances_member_id_foreign` foreign key (`member_id`) references `members` () on delete cascade on update cascade) at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, PDOException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') on delete cascade on update cascade' at line 1 at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php:452)
+[stacktrace]
+#0 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('alter table `ba...', Array, Object(Closure))
+#1 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php(459): Illuminate\\Database\\Connection->run('alter table `ba...', Array, Object(Closure))
+#2 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(97): Illuminate\\Database\\Connection->statement('alter table `ba...')
+#3 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(278): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(167): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(237): Illuminate\\Database\\Schema\\Builder->create('balances', Object(Closure))
+#6 /var/www/html/walfare/database/migrations/2019_06_02_072212_create_balances_table.php(18): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(385): CreateBalancesTable->up()
+#8 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(394): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(197): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateBalancesTable), 'up')
+#10 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(164): Illuminate\\Database\\Migrations\\Migrator->runUp('/var/www/html/w...', 1, false)
+#11 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(111): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#12 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(71): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#14 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#15 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#19 /var/www/html/walfare/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#21 /var/www/html/walfare/vendor/symfony/console/Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 /var/www/html/walfare/vendor/symfony/console/Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 /var/www/html/walfare/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 /var/www/html/walfare/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 {main}
+"} 
+[2019-06-02 07:39:33] local.ERROR: SQLSTATE[HY000] [1049] Unknown database 'walfare' (SQL: select * from information_schema.tables where table_schema = walfare and table_name = migrations and table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'walfare' (SQL: select * from information_schema.tables where table_schema = walfare and table_name = migrations and table_type = 'BASE TABLE') at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, PDOException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'walfare' at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70)
+[stacktrace]
+#0 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php(333): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(18): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(583): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#7 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#8 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#9 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#11 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#12 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#13 /var/www/html/walfare/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#14 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 /var/www/html/walfare/vendor/symfony/console/Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 /var/www/html/walfare/vendor/symfony/console/Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 /var/www/html/walfare/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 /var/www/html/walfare/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 {main}
+"} 
+[2019-06-02 07:53:26] local.ERROR: SQLSTATE[HY000] [1049] Unknown database 'walfare' (SQL: select * from information_schema.tables where table_schema = walfare and table_name = migrations and table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'walfare' (SQL: select * from information_schema.tables where table_schema = walfare and table_name = migrations and table_type = 'BASE TABLE') at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, PDOException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'walfare' at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70)
+[stacktrace]
+#0 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php(333): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(18): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(583): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#7 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#8 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#9 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#11 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#12 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#13 /var/www/html/walfare/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#14 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 /var/www/html/walfare/vendor/symfony/console/Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 /var/www/html/walfare/vendor/symfony/console/Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 /var/www/html/walfare/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 /var/www/html/walfare/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 {main}
+"} 
+[2019-06-02 10:45:45] local.ERROR: The "--create" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--create\" option does not exist. at /var/www/html/walfare/vendor/symfony/console/Input/ArgvInput.php:218)
+[stacktrace]
+#0 /var/www/html/walfare/vendor/symfony/console/Input/ArgvInput.php(154): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption('create', NULL)
+#1 /var/www/html/walfare/vendor/symfony/console/Input/ArgvInput.php(82): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption('--create')
+#2 /var/www/html/walfare/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#3 /var/www/html/walfare/vendor/symfony/console/Command/Command.php(214): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#4 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#5 /var/www/html/walfare/vendor/symfony/console/Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 /var/www/html/walfare/vendor/symfony/console/Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Routing\\Console\\ControllerMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 /var/www/html/walfare/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 /var/www/html/walfare/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 {main}
+"} 
+[2019-06-02 10:46:06] local.ERROR: Too many arguments, expected arguments "command" "name". {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): Too many arguments, expected arguments \"command\" \"name\". at /var/www/html/walfare/vendor/symfony/console/Input/ArgvInput.php:183)
+[stacktrace]
+#0 /var/www/html/walfare/vendor/symfony/console/Input/ArgvInput.php(86): Symfony\\Component\\Console\\Input\\ArgvInput->parseArgument('model=Member')
+#1 /var/www/html/walfare/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#2 /var/www/html/walfare/vendor/symfony/console/Command/Command.php(214): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#3 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#4 /var/www/html/walfare/vendor/symfony/console/Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /var/www/html/walfare/vendor/symfony/console/Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Routing\\Console\\ControllerMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 /var/www/html/walfare/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 /var/www/html/walfare/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
+[2019-06-02 10:57:03] local.ERROR: Class App\Http\Controllers\MemberController does not exist {"exception":"[object] (ReflectionException(code: -1): Class App\\Http\\Controllers\\MemberController does not exist at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php:790)
+[stacktrace]
+#0 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#1 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#2 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array)
+#3 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(757): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#4 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Route.php(233): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#5 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Route.php(833): Illuminate\\Routing\\Route->getController()
+#6 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Route.php(794): Illuminate\\Routing\\Route->controllerMiddleware()
+#7 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Router.php(693): Illuminate\\Routing\\Route->gatherMiddleware()
+#8 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Router.php(673): Illuminate\\Routing\\Router->gatherRouteMiddleware(Object(Illuminate\\Routing\\Route))
+#9 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#10 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#11 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#12 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#13 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#14 /var/www/html/walfare/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#31 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#32 /var/www/html/walfare/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#33 /var/www/html/walfare/server.php(21): require_once('/var/www/html/w...')
+#34 {main}
+"} 
+[2019-06-02 10:58:48] local.ERROR: Class App\Http\Controllers\SpouseController does not exist {"exception":"[object] (ReflectionException(code: -1): Class App\\Http\\Controllers\\SpouseController does not exist at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php:790)
+[stacktrace]
+#0 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(790): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#1 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#2 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array)
+#3 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(757): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#4 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Route.php(233): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Contro...')
+#5 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Route.php(833): Illuminate\\Routing\\Route->getController()
+#6 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Route.php(794): Illuminate\\Routing\\Route->controllerMiddleware()
+#7 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Router.php(693): Illuminate\\Routing\\Route->gatherMiddleware()
+#8 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Router.php(673): Illuminate\\Routing\\Router->gatherRouteMiddleware(Object(Illuminate\\Routing\\Route))
+#9 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#10 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#11 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#12 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#13 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#14 /var/www/html/walfare/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#31 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#32 /var/www/html/walfare/public/index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#33 /var/www/html/walfare/server.php(21): require_once('/var/www/html/w...')
+#34 {main}
+"} 
+[2019-06-02 14:22:14] local.ERROR: The "--create-admins" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--create-admins\" option does not exist. at /var/www/html/walfare/vendor/symfony/console/Input/ArgvInput.php:218)
+[stacktrace]
+#0 /var/www/html/walfare/vendor/symfony/console/Input/ArgvInput.php(154): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption('create-admins', NULL)
+#1 /var/www/html/walfare/vendor/symfony/console/Input/ArgvInput.php(82): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption('--create-admins')
+#2 /var/www/html/walfare/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#3 /var/www/html/walfare/vendor/symfony/console/Command/Command.php(214): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#4 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#5 /var/www/html/walfare/vendor/symfony/console/Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 /var/www/html/walfare/vendor/symfony/console/Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 /var/www/html/walfare/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 /var/www/html/walfare/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 {main}
+"} 
+[2019-06-02 14:32:50] local.ERROR: SQLSTATE[HY000] [1049] Unknown database 'walfare' (SQL: select * from information_schema.tables where table_schema = walfare and table_name = migrations and table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'walfare' (SQL: select * from information_schema.tables where table_schema = walfare and table_name = migrations and table_type = 'BASE TABLE') at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, PDOException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'walfare' at /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70)
+[stacktrace]
+#0 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Connection.php(333): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(18): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(583): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#7 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#8 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#9 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#11 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#12 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#13 /var/www/html/walfare/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#14 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 /var/www/html/walfare/vendor/symfony/console/Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 /var/www/html/walfare/vendor/symfony/console/Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 /var/www/html/walfare/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 /var/www/html/walfare/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 /var/www/html/walfare/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 {main}
+"} 

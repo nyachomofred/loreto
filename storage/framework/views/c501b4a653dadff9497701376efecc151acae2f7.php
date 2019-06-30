@@ -1,0 +1,1 @@
+this is the index page of balance<?php /**PATH /var/www/html/walfare/resources/views/balances/index.blade.php ENDPATH**/ ?>
